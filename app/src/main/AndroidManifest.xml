@@ -14,13 +14,13 @@
         android:theme="@style/Theme.Baitonghop"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity4"
+            android:name=".Nguyenvandiem"
             android:exported="false" />
         <activity
-            android:name=".MainActivity6"
+            android:name=".Trandinhphong"
             android:exported="false" />
         <activity
-            android:name=".MainActivity5"
+            android:name=".Truongthihoa"
             android:exported="false" />
         <activity
             android:name=".MainActivity3"

@@ -45,12 +45,18 @@ public class Adapter_monan extends BaseAdapter {
         view = inflater.inflate(layout, null);
         Monan monan = arraylist.get(position);
 
-        TextView text1 = view.findViewById(R.id.name);
-        TextView text2 = view.findViewById(R.id.mota);
+        TextView text1 = view.findViewById(R.id.hoten);
+        TextView text2 = view.findViewById(R.id.capbac);
+        TextView text3 = view.findViewById(R.id.noicongtac);
+        TextView text4 = view.findViewById(R.id.quocgia);
+        TextView text5 = view.findViewById(R.id.sosao);
         ImageView imageV = view.findViewById(R.id.imageHinh);
 
-        text1.setText(monan.getTenmon());
-        text2.setText(monan.getMota());
+        text1.setText(monan.getHoten());
+        text2.setText(monan.getCapbac());
+        text3.setText(monan.getNoicongtac());
+        text4.setText(monan.getQuocgia());
+        text5.setText(monan.getSosao());
         imageV.setImageResource(monan.getHinh());
 
         return view;
