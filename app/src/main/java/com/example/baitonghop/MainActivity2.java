@@ -12,24 +12,24 @@ import java.util.ArrayList;
 
 public class MainActivity2 extends AppCompatActivity {
     ListView listView;
-    ArrayList<Monan> arrayList;
-    Adapter_monan adapter;
+    ArrayList<Congan> arrayList;
+    Adapter_congan adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         listView = findViewById(R.id.listviewmonan);
         arrayList = new ArrayList<>();
-        arrayList.add(new Monan( "TRƯƠNG THỊ HOA","Cấp bậc: Thượng úy", "Nơi công tác: Hà Nội","Việt nam", "Số Sao: 2", R.drawable.img));
-        arrayList.add(new Monan( "TRẦN ĐÌNH PHONG","Cấp bậc: Thiếu tá", "Nơi công tác: Hải phòng","Việt nam", "Số Sao: 1", R.drawable.img_1));
-        arrayList.add(new Monan( "NGUYỄN VĂN DIỆM","Cấp bậc: Thượng úy", "Nơi công tác: Hà Nội","Việt nam", "Số Sao: 2", R.drawable.img_2));
-        arrayList.add(new Monan( "NGUYỄN LÂM","Cấp bậc: Đại úy", "Nơi công tác: Nghệ An","Việt nam", "Số Sao: 1", R.drawable.img_3));
-        arrayList.add(new Monan( "VŨ ĐÌNH QUÂN","Cấp bậc: Hạ sỹ", "Nơi công tác: Đà Nẵng","Việt nam", "Số Sao: 2", R.drawable.img_4));
-        arrayList.add(new Monan( "MAI THỊ LAN","Cấp bậc: Đại úy", "Nơi công tác: Thành phố Hồ Chí Minh","Việt nam", "Số Sao: 2", R.drawable.img_5));
+        arrayList.add(new Congan( "TRƯƠNG THỊ HOA","Cấp bậc: Thượng úy", "Nơi công tác: Hà Nội","Việt nam", "Số Sao: 2", R.drawable.img));
+        arrayList.add(new Congan( "TRẦN ĐÌNH PHONG","Cấp bậc: Thiếu tá", "Nơi công tác: Hải phòng","Việt nam", "Số Sao: 1", R.drawable.img_1));
+        arrayList.add(new Congan( "NGUYỄN VĂN DIỆM","Cấp bậc: Thượng úy", "Nơi công tác: Hà Nội","Việt nam", "Số Sao: 2", R.drawable.img_2));
+        arrayList.add(new Congan( "NGUYỄN LÂM","Cấp bậc: Đại úy", "Nơi công tác: Nghệ An","Việt nam", "Số Sao: 1", R.drawable.img_3));
+        arrayList.add(new Congan( "VŨ ĐÌNH QUÂN","Cấp bậc: Hạ sỹ", "Nơi công tác: Đà Nẵng","Việt nam", "Số Sao: 2", R.drawable.img_4));
+        arrayList.add(new Congan( "MAI THỊ LAN","Cấp bậc: Đại úy", "Nơi công tác: Thành phố Hồ Chí Minh","Việt nam", "Số Sao: 2", R.drawable.img_5));
 
 
 
-        adapter = new Adapter_monan( MainActivity2.this,R.layout.layout_monan, arrayList);
+        adapter = new Adapter_congan( MainActivity2.this,R.layout.layout_monan, arrayList);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

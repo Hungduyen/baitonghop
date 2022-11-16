@@ -10,13 +10,13 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class Adapter_monan extends BaseAdapter {
+public class Adapter_congan extends BaseAdapter {
 
     private Context context;
     private int layout;
-    private List<Monan> arraylist;
+    private List<Congan> arraylist;
 
-    public Adapter_monan(Context context, int layout, List<Monan> arraylist) {
+    public Adapter_congan(Context context, int layout, List<Congan> arraylist) {
         this.context = context;
         this.layout = layout;
         this.arraylist = arraylist;
@@ -43,7 +43,7 @@ public class Adapter_monan extends BaseAdapter {
     public View getView(int position, View view, ViewGroup viewGroup) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = inflater.inflate(layout, null);
-        Monan monan = arraylist.get(position);
+        Congan monan = arraylist.get(position);
 
         TextView text1 = view.findViewById(R.id.hoten);
         TextView text2 = view.findViewById(R.id.capbac);

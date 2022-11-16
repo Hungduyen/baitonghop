@@ -1,6 +1,6 @@
 package com.example.baitonghop;
 
-public class Monan {
+public class Congan {
     private String hoten;
     private String capbac;
     private String noicongtac;
@@ -8,7 +8,7 @@ public class Monan {
     private String sosao;
     private int hinh;
 
-    public Monan(String hoten, String capbac, String noicongtac, String quocgia, String sosao, int hinh) {
+    public Congan(String hoten, String capbac, String noicongtac, String quocgia, String sosao, int hinh) {
         this.hoten = hoten;
         this.capbac = capbac;
         this.noicongtac = noicongtac;
@@ -21,7 +21,7 @@ public class Monan {
         return hoten;
     }
 
-    public void setHoten(String tenmon) {
+    public void setHoten(String hoten) {
         this.hoten = hoten;
     }
 

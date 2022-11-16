@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Bạn đã đăng nhập thành công", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                         startActivity(intent);
-                    }else if(edituser.getText().toString().equals("hung") && editpass.getText().toString().equals("hung")){
+                    }else if(edituser.getText().toString().equals("admin") && editpass.getText().toString().equals("admin")){
                         Toast.makeText(MainActivity.this, "Bạn đã đăng nhập thành công", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                         startActivity(intent);
